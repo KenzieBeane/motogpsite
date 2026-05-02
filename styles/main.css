@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header {
+    background-color: rgba(29, 1, 1, 0.751);
+    background-image: url(../images/motoGP_track.jpg);
+    background-size: cover;
+    background-position: 100%;
+    background-blend-mode: multiply;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 240px;
+}
+
+/* Header */
+header a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    gap: 10px;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+}
+
+header h1 {
+    font-size: 400%;
+}
+
+header h2 {
+    color: white;
+    font-size: 230%;
+    position: absolute;
+    top: 155px;
+}
+
+/* Navigation Bar */
+#nav_menu {
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(113, 15, 15), rgb(58, 8, 8), rgb(37, 5, 5), rgb(58, 8, 8), rgb(113, 15, 15));
+    border-top: 5px solid rgb(148, 17, 17);
+    margin-bottom: 15px;
+    position: sticky;
+    top: 0;
+}
+
+#nav_menu ul {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+}
+
+#nav_menu li {
+    width: 33.33%;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    width: 33.33%;
+}
+
+#nav_menu ul ul li {
+    width: 100%;
+}
+
+#nav_menu ul ul li a {
+    text-align: left;
+    padding: 1em .5em;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
+    background-image: linear-gradient(to left, rgb(58, 8, 8), rgb(37, 5, 5));
+}
+
+#nav_menu a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 1em 0;
+    transition: all ease-in-out 500ms;
+}
+
+#nav_menu a:hover {
+    background-color: rgb(148, 17, 17);
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+aside h3 {
+    font-size: 150%;
+    margin-bottom: 15px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside li {
+    margin-bottom: .7em;
+}
+
+aside a {
+    text-decoration: none;
+    background-color: rgb(100, 13, 13);
+    color: white;
+    padding: .7em;
+    border-radius: 15px;
+    display: block;
+    font-size: 95%;
+}
+
+aside a:hover {
+    background-color: rgb(148, 17, 17);
+    transition: all ease-in-out 400ms;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+section h4 {
+    font-size: 160%;
+    margin-bottom: 5px;
+}
+
+section img {
+    max-width: 70%;
+    margin: 10px 0 20px 60px;
+}
+
+section p {
+    font-size: 110%;
+    margin-right: 70px;
+    margin-bottom: 15px;
+}
+
+/* Return to Top Button*/
+#cornerBtn {
+    display: none;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    max-width: 50px;
+    height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    border-radius: 50vh;
+    background-color: rgb(136, 86, 86);
+    transition: all ease-in-out 250ms;
+}
+
+#cornerBtn:hover {
+    background-color: rgb(37, 5, 5);
+}
+
+#cornerBtn img {
+   max-width: 100%;
+}
+
+footer {
+    background-image: linear-gradient(to right, rgb(113, 15, 15), rgb(58, 8, 8), rgb(37, 5, 5), rgb(58, 8, 8), rgb(113, 15, 15));
+    color: white;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 15px;
+}
+
+#mobilemenu {
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    header {
+        height: 180px;
+    }
+
+    header img {
+        height: 40px;
+    }
+    
+    header h1 {
+        font-size: 300%;
+    }
+
+    header h2 {
+        font-size: 150%;
+        top: 115px;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    #mobilemenu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: rgb(113, 15, 15);
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section, aside {
+        max-width: 95%;
+    }
+
+    aside {
+        order: 2;
+    }
+
+    section h4 {
+        font-size: 140%;
+    }
+
+    section p {
+        font-size: 100%;
+    }
+
+    footer {
+        background-image: none;
+        background-color: rgb(113, 15, 15);
+    }
+}
+
+@media (max-width: 490px) {
+    #cornerBtn {
+        max-width: 40px;
+        max-height: 40px;
+    }
+}
+
+@media (max-width: 479px) {
+    header img {
+        height: 30px;
+    }
+
+    header h1 {
+        font-size: 200%;
+    }
+}

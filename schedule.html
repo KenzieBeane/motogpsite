@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<!-- Slicknav JS File -->
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobilemenu", allowParentLinks: true });
+		});
+	</script>
+
+    <!-- Style Links -->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/schedule.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/MotoGP_logo.png" type="image/x-icon">
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>MotoGP Guide | Schedule</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" title="Return to Home">
+            <img src="images/MotoGP_full_logo_white.png" alt="MotoGP Logo">
+            <h1>Guide</h1>
+        </a>
+        <h2>Schedule</h2>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav id="mobilemenu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="all_riders.html">Riders</a>
+                <ul>
+                    <li><a href="podium_riders.html">Podium Riders</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="countdown">
+            <h1>Final Grand Prix Countdown:</h1>
+            <h1 id="displaytimer"></h1>
+        </div>
+
+        <section>
+            <div class="schedule">
+                <div class="text">
+                    <h2>1 Thailand</h2>
+                    <h3>27 Feb - 1 Mar</h3>
+                    <p>PT GRAND PRIX OF THAILAND</p>
+                </div>
+                <img src="images/thailand.svg" alt="Thailand Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>2 Brazil</h2>
+                    <h3>20 Mar - 22 Mar</h3>
+                    <p>ESTRELLA GALICIA 0,0 GRAND PRIX OF BRAZIL</p>
+                </div>
+                <img src="images/brazil.svg" alt="Brazil Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>3 USA</h2>
+                    <h3>27 Mar - 29 Mar</h3>
+                    <p>RED BULL GRAND PRIX OF THE UNITED STATES</p>
+                </div>
+                <img src="images/usa.svg" alt="USA Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>4 Spain</h2>
+                    <h3>24 Apr - 26 Apr</h3>
+                    <p>ESTRELLA GALICIA 0,0 GRAND PRIX OF SPAIN</p>
+                </div>
+                <img src="images/spain.svg" alt="Spain Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>5 France</h2>
+                    <h3>8 May - 10 May</h3>
+                    <p>MICHELIN® GRAND PRIX OF FRANCE</p>
+                </div>
+                <img src="images/france.svg" alt="France Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>6 Catalonia</h2>
+                    <h3>15 May - 17 May</h3>
+                    <p>MONSTER ENERGY GRAND PRIX OF CATALUNYA</p>
+                </div>
+                <img src="images/catalonia.svg" alt="Catalonia Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>7 Italy</h2>
+                    <h3>29 May - 31 May</h3>
+                    <p>BREMBO GRAND PRIX OF ITALY</p>
+                </div>
+                <img src="images/italy.svg" alt="Italy Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>8 Hungary</h2>
+                    <h3>5 Jun - 7 Jun</h3>
+                    <p>GRAND PRIX OF HUNGARY</p>
+                </div>
+                <img src="images/hungary.svg" alt="Hungary Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>9 Czechia</h2>
+                    <h3>19 Jun - 21 Jun</h3>
+                    <p>GRAND PRIX OF CZECHIA</p>
+                </div>
+                <img src="images/czechia.svg" alt="Czechia Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>10 Netherlands</h2>
+                    <h3>26 Jun - 28 Jun</h3>
+                    <p>GRAND PRIX OF THE NETHERLANDS</p>
+                </div>
+                <img src="images/netherlands.svg" alt="Netherlands Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>11 Germany</h2>
+                    <h3>10 Jul - 12 Jul</h3>
+                    <p>LIQUI MOLY GRAND PRIX OF GERMANY</p>
+                </div>
+                <img src="images/germany.svg" alt="Germany Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>12 Great Britain</h2>
+                    <h3>7 Aug - 9 Aug</h3>
+                    <p>QATAR AIRWAYS GRAND PRIX OF GREAT BRITAIN</p>
+                </div>
+                <img src="images/great_britain.svg" alt="Great Britain Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>13 Aragon</h2>
+                    <h3>28 Aug - 30 Aug</h3>
+                    <p>GRAND PRIX OF ARAGON</p>
+                </div>
+                <img src="images/aragon.svg" alt="Aragon Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>14 San Marino</h2>
+                    <h3>11 Sep - 13 Sep</h3>
+                    <p>RED BULL GRAND PRIX OF SAN MARINO AND THE RIMINI RIVIERA</p>
+                </div>
+                <img src="images/san_marino.svg" alt="San Marino Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>15 Austria</h2>
+                    <h3>18 Sep - 20 Sep</h3>
+                    <p>GRAND PRIX OF AUSTRIA</p>
+                </div>
+                <img src="images/austria.svg" alt="Austria Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>16 Japan</h2>
+                    <h3>1 Oct - 4 Oct</h3>
+                    <p>MOTUL GRAND PRIX OF JAPAN</p>
+                </div>
+                <img src="images/japan.svg" alt="Japan Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>17 Indonesia</h2>
+                    <h3>9 Oct - 11 Oct</h3>
+                    <p>PERTAMINA GRAND PRIX OF INDONESIA</p>
+                </div>
+                <img src="images/indonesia.svg" alt="Indonesia Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>18 Australia</h2>
+                    <h3>22 Oct - 25 Oct</h3>
+                    <p>GRAND PRIX OF AUSTRALIA</p>
+                </div>
+                <img src="images/australia.svg" alt="Australia Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>19 Malaysia</h2>
+                    <h3>30 Oct - 1 Nov</h3>
+                    <p>PETRONAS GRAND PRIX OF MALAYSIA</p>
+                </div>
+                <img src="images/malaysia.svg" alt="Malaysia Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>20 Qutar</h2>
+                    <h3>6 Nov - 8 Nov</h3>
+                    <p>QATAR AIRWAYS GRAND PRIX OF QATAR</p>
+                </div>
+                <img src="images/qatar.svg" alt="Qatar Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>21 Portugal</h2>
+                    <h3>20 Nov - 22 Nov</h3>
+                    <p>REPSOL GRAND PRIX OF PORTUGAL</p>
+                </div>
+                <img src="images/portugal.svg" alt="Portugal Flag">
+            </div>
+            <div class="schedule">
+                <div class="text">
+                    <h2>22 Valencia</h2>
+                    <h3>27 Nov - 29 Nov</h3>
+                    <p>MOTUL GRAND PRIX OF VALENCIA</p>
+                </div>
+                <img src="images/valencia.svg" alt="Valencia Flag">
+            </div>
+        </section>
+    </main>
+
+    <!-- Return to Top Button -->
+    <button id="cornerBtn" title="Return to Top" onclick="topFunction()"><img src="images/return_to_top.png" alt="Return to Top"></button>
+
+    <footer>
+        &copy; <span id="copyrightyear"></span> Makenzie Beane Productions
+    </footer>
+</body>
+
+</html>
+
+<script src="js/scripts.js"></script>

@@ -1,0 +1,152 @@
+main {
+    flex-direction: column;
+    align-items: center;
+}
+
+#aprilia, #ducati, #honda, #ktm, #yamaha {
+    margin: 30px 0;
+    text-align: center;
+    width: 80%;
+    border: 8px double black;
+    padding-bottom: 15px;
+}
+
+/* Manufacturer Box Shadow */
+#aprilia {
+    box-shadow: 1px 1px 9px 10px #111111;
+}
+
+#ducati {
+    box-shadow: 1px 1px 9px 10px #990000;
+}
+
+#honda {
+    box-shadow: 1px 1px 9px 10px #E60012;
+}
+
+#ktm {
+    box-shadow: 1px 1px 9px 10px #FF6600;
+}
+
+#yamaha {
+    box-shadow: 1px 1px 9px 10px #0033A0;
+}
+
+#aprilia h1, #ducati h1, #honda h1, #ktm h1, #yamaha h1 {
+    font-weight: 800;
+    font-size: 300%;
+    margin: 18px 0;
+}
+
+/* Manufacturer Name Color */
+#aprilia h1 {
+    color: #111111;
+}
+
+#ducati h1 {
+    color: #CC0000;
+}
+
+#honda h1 {
+    color: #E10600;
+}
+
+#ktm h1 {
+    color: #FF6600;
+}
+
+#yamaha h1 {
+    color: #0033A0;
+}
+
+.apriliaTeam, .ducatiTeam, .hondaTeam, .ktmTeam, .yamahaTeam {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.apriliaTeam h2, .ducatiTeam h2, .hondaTeam h2, .ktmTeam h2, .yamahaTeam h2 {
+    grid-column: 2;
+    font-size: 180%;
+}
+
+.apriliaTeam a, .ducatiTeam a, .hondaTeam a, .ktmTeam a, .yamahaTeam a {
+    text-decoration: none;
+}
+
+/* Team Name Color */
+#aprilia .apriliaTeam {
+    color: #D50000;
+}
+
+#ducati .ducatiTeam {
+    color: #990000;
+}
+
+#honda .hondaTeam {
+    color: #9B0000;
+}
+
+#ktm .ktmTeam {
+    color: #CC5200;
+}
+
+#yamaha .yamahaTeam {
+    color: #001F66;
+}
+
+.rider {
+    background-image: linear-gradient(to bottom, rgb(58, 8, 8), rgb(113, 15, 15));
+    margin: 20px 0;
+    color: white;
+    border-radius: 10px;
+    border: 3.5px solid black;
+}
+
+.rider h3 {
+    font-size: 150%;
+    margin: 8px 0 15px 0;
+}
+
+.rider img {
+    max-width: 250px;
+    display: block;
+}
+
+/* Rider Hover Color */
+#aprilia .rider:hover {
+    box-shadow: 1px 1px 4px 5px #008C45;
+}
+
+#ducati .rider:hover {
+    box-shadow: 1px 1px 4px 5px #FF4D4D;
+}
+
+#honda .rider:hover {
+    box-shadow: 1px 1px 4px 5px #FF6A00;
+}
+
+#ktm .rider:hover {
+    box-shadow: 1px 1px 4px 5px #A84300;
+}
+
+#yamaha .rider:hover {
+    box-shadow: 1px 1px 4px 5px #4D79FF;
+}
+
+/* Media queries */
+@media (max-width: 980px) {
+    .apriliaTeam, .ducatiTeam, .hondaTeam, .ktmTeam, .yamahaTeam {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .apriliaTeam h2, .ducatiTeam h2, .hondaTeam h2, .ktmTeam h2, .yamahaTeam h2 {
+        order: -1;
+    }
+}

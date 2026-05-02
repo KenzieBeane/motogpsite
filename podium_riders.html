@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<!-- Slicknav JS File -->
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobilemenu", allowParentLinks: true });
+		});
+	</script>
+
+    <!-- Style Links -->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/podium_riders.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/MotoGP_logo.png" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/79c578fa44.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>MotoGP Guide | Podium Riders</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" title="Return to Home">
+            <img src="images/MotoGP_full_logo_white.png" alt="MotoGP Logo">
+            <h1>Guide</h1>
+        </a>
+        <h2>Podium Riders</h2>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav id="mobilemenu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="all_riders.html">Riders</a>
+                <ul>
+                    <li><a href="podium_riders.html">Podium Riders</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="rider">
+            <div class="gallery">
+                <div class="last">
+                    <i class="fa-solid fa-chevron-left" onclick="showImage(-1)"></i>
+                </div>
+                <div class="images">
+                    <div class="image"><img src="images/bezzecchi1.jpg" alt="Bezzecchi"></div>
+                    <div class="image"><img src="images/bezzecchi2.jpg" alt="Bezzecchi"></div>
+                    <div class="image"><img src="images/bezzecchi3.webp" alt="Bezzecchi"></div>
+                    <div class="image"><img src="images/bezzecchi4.jpg" alt="Bezzecchi"></div>
+                    <div class="image"><img src="images/bezzecchi5.jpg" alt="Bezzecchi"></div>
+                    <div class="image"><img src="images/bezzecchi6.jpg" alt="Bezzecchi"></div>
+                    <div class="image"><img src="images/bezzecchi7.jpg" alt="Bezzecchi"></div>
+                    <div class="image"><img src="images/bezzecchi8.jpg" alt="Bezzecchi"></div>
+                    <div class="image"><img src="images/bezzecchi9.jpeg" alt="Bezzecchi"></div>
+                    <div class="image"><img src="images/bezzecchi10.jpg" alt="Bezzecchi"></div>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-chevron-right" onclick="showImage(1)"></i>
+                </div>
+            </div>
+            <div class="information">
+                <h1>Marco <br>Bezzecchi</h1>
+                <h2>Position: One</h2>
+                <h3>Points: 101</h3>
+                <h3>Victories: Three</h3>
+                <h3>Podiums: Four</h3>
+            </div>
+        </div>
+
+        <div class="rider">
+            <div class="gallery">
+                <div class="last">
+                    <i class="fa-solid fa-chevron-left" onclick="showImage2(-1)"></i>
+                </div>
+                <div class="images">
+                    <div class="image2"><img src="images/Martín1.jpg" alt="Martín"></div>
+                    <div class="image2"><img src="images/Martín2.webp" alt="Martín"></div>
+                    <div class="image2"><img src="images/Martín3.webp" alt="Martín"></div>
+                    <div class="image2"><img src="images/Martín4.webp" alt="Martín"></div>
+                    <div class="image2"><img src="images/Martín5.webp" alt="Martín"></div>
+                    <div class="image2"><img src="images/Martín6.jpg" alt="Martín"></div>
+                    <div class="image2"><img src="images/Martín7.jpg" alt="Martín"></div>
+                    <div class="image2"><img src="images/Martín8.webp" alt="Martín"></div>
+                    <div class="image2"><img src="images/Martín9.jpg" alt="Martín"></div>
+                    <div class="image2"><img src="images/Martín10.webp" alt="Martín"></div>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-chevron-right" onclick="showImage2(1)"></i>
+                </div>
+            </div>
+            <div class="information">
+                <h1>Jorge <br>Martín</h1>
+                <h2>Position: Two</h2>
+                <h3>Points: 90</h3>
+                <h3>Victories: Zero</h3>
+                <h3>Podiums: Two</h3>
+            </div>
+        </div>
+
+        <div class="rider">
+            <div class="gallery">
+                <div class="last">
+                    <i class="fa-solid fa-chevron-left" onclick="showImage3(-1)"></i>
+                </div>
+                <div class="images">
+                    <div class="image3"><img src="images/Di_Giannantonio1.webp" alt="Di Giannantonio"></div>
+                    <div class="image3"><img src="images/Di_Giannantonio2.webp" alt="Di Giannantonio"></div>
+                    <div class="image3"><img src="images/Di_Giannantonio3.webp" alt="Di Giannantonio"></div>
+                    <div class="image3"><img src="images/Di_Giannantonio4.webp" alt="Di Giannantonio"></div>
+                    <div class="image3"><img src="images/Di_Giannantonio5.webp" alt="Di Giannantonio"></div>
+                    <div class="image3"><img src="images/Di_Giannantonio6.jpg" alt="Di Giannantonio"></div>
+                    <div class="image3"><img src="images/Di_Giannantonio7.webp" alt="Di Giannantonio"></div>
+                    <div class="image3"><img src="images/Di_Giannantonio8.webp" alt="Di Giannantonio"></div>
+                    <div class="image3"><img src="images/Di_Giannantonio9.jpg" alt="Di Giannantonio"></div>
+                    <div class="image3"><img src="images/Di_Giannantonio10.jpg" alt="Di Giannantonio"></div>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-chevron-right" onclick="showImage3(1)"></i>
+                </div>
+            </div>
+            <div class="information">
+                <h1>Fabio <br>Di Giannantonio</h1>
+                <h2>Position: Three</h2>
+                <h3>Points: 71</h3>
+                <h3>Victories: Zero</h3>
+                <h3>Podiums: Two</h3>
+            </div>
+        </div>
+
+        <div class="rider">
+            <div class="gallery">
+                <div class="last">
+                    <i class="fa-solid fa-chevron-left" onclick="showImage4(-1)"></i>
+                </div>
+                <div class="images">
+                    <div class="image4"><img src="images/Acosta1.webp" alt="Acosta"></div>
+                    <div class="image4"><img src="images/Acosta2.webp" alt="Acosta"></div>
+                    <div class="image4"><img src="images/Acosta3.avif" alt="Acosta"></div>
+                    <div class="image4"><img src="images/Acosta4.webp" alt="Acosta"></div>
+                    <div class="image4"><img src="images/Acosta5.webp" alt="Acosta"></div>
+                    <div class="image4"><img src="images/Acosta6.webp" alt="Acosta"></div>
+                    <div class="image4"><img src="images/Acosta7.jpeg" alt="Acosta"></div>
+                    <div class="image4"><img src="images/Acosta8.webp" alt="Acosta"></div>
+                    <div class="image4"><img src="images/Acosta9.jpg" alt="Acosta"></div>
+                    <div class="image4"><img src="images/Acosta10.jpg" alt="Acosta"></div>
+                </div>
+                <div class="next">
+                    <i class="fa-solid fa-chevron-right" onclick="showImage4(1)"></i>
+                </div>
+            </div>
+            <div class="information">
+                <h1>Pedro <br>Acosta</h1>
+                <h2>Position: Four</h2>
+                <h3>Points: 66</h3>
+                <h3>Victories: Zero</h3>
+                <h3>Podiums: Two</h3>
+            </div>
+        </div>
+    </main>
+
+    <!-- Return to Top Button -->
+    <button id="cornerBtn" title="Return to Top" onclick="topFunction()"><img src="images/return_to_top.png" alt="Return to Top"></button>
+
+    <footer>
+        &copy; <span id="copyrightyear"></span> Makenzie Beane Productions
+    </footer>
+</body>
+
+</html>
+
+<script src="js/scripts.js"></script>

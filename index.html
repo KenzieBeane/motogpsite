@@ -1,27 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About MotoGP</title>
+
+    <!-- JQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<!-- Slicknav JS File -->
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobilemenu", allowParentLinks: true });
+		});
+	</script>
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/MotoGP_logo.png" type="image/x-icon">
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <title>MotoGP Guide | Home</title>
 </head>
+
 <body>
     <header>
-        <h2>About MotoGP</h2>
+        <a href="index.html" title="Return to Home">
+            <img src="images/MotoGP_full_logo_white.png" alt="MotoGP Logo">
+            <h1>Guide</h1>
+        </a>
     </header>
-    <main>
-        <p>I will create a website about MotoGP, the international motorcycle race. It will feature pages such as:
-            <ul>
-                <li>Home: an informational page about the race and serving as a homepage to link to other pages</li>
-                <li>Riders: two pages, one containing information about the top riders, and the other containing a list of all riders</li>
-                <li>Schedule: a page containing the schedule for the upcoming race (at the time of submission)</li>
-                <li>Tickets: a page to obtain tickets for the upcoming races</li>
-                <li>...And more if I think of them/need them</li>
-            </ul>
-        </p>
-    </main>
-    <footer>
 
+    <!-- Navigation Bar -->
+    <nav id="mobilemenu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="all_riders.html">Riders</a>
+                <ul>
+                    <li><a href="podium_riders.html">Podium Riders</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <h3>Additional Resources:</h3>
+            <ul>
+                <li><a href="https://www.motogp.com/en" target="_blank">MotoGP Website</a></li>
+                <li><a href="https://www.motogp.com/en/blog-articles/what-are-the-motogp-rules-a-complete-overview/521386"
+                        target="_blank">Rules</a></li>
+                <li><a href="https://www.motogp.com/en/news/2025/10/29/what-does-a-motogp-race-weekend-look-like/762537"
+                        target="_blank">Race Weekend Structure</a></li>
+                <li><a href="https://www.motogp.com/en/blog-articles" target="_blank">More Information</a></li>
+                <li><a href="https://www.motogp.com/en/news" target="_blank">News</a></li>
+            </ul>
+        </aside>
+
+        <section>
+            <h4>What is MotoGP?</h4>
+
+            <p>Hosted by the Fédération Internationale de Motocyclisme (FIM), the FIM Grand Prix World Championship is
+                the highest class of motorcycle road racing. MotoGP takes place across Europe, Asia, Oceania, North
+                America and South America, concluding in Valencia, Spain at the end of the season. This year, the
+                championship includes 22 grands prix to decide a champion based on overall points accumulated throughout
+                the season.</p>
+
+            <p>A MotoGP race weekend includes practices on Friday, qualifying races and the MotoGP Tissot Sprint on Saturday,
+                and the full-length Grand Prix on Sunday. During a Grand Prix, only the first 15 riders to finish earn
+                points, with the winner gaining the maximum 25 points. Sprints are races consisting of fewer laps,
+                awarding points to only the top 9 riders, with 12 points going to the winner.</p>
+
+            <img src="images/group_of_riders.webp" alt="Group of MotoGP riders">
+
+            <h4>The Bikes</h4>
+
+            <p>The motorcycles used in MotoGP are specialized bikes unavailable for purchase by the general public and
+                illegal to ride on public roads. Currently, 5 manufacturers compete in MotoGP, including: Aprilia,
+                Ducati, Honda, KTM, and Yamaha. The bikes used in the championship are extremely fast. The top speed
+                ever reached in MotoGP was 227.5pmh (336.1km/h), and bikes regularaly reach speeds of 223.7mph (360km/h)
+                on the track.</p>
+
+            <h4>Classes</h4>
+
+            <p>The championship includes 3 official classes: MotoGP, Moto2, and Moto3. The MotoGP is the premier class
+                of Grand Prix motorcycle racing and features 1000cc motorcycles. Moto2 is the intermediate class in the
+                championship, and Moto3 is the entry class. Moving up through each class means faster bikes, higher
+                speeds, more laps, and more skilled riders. MotoGP is extremely demanding and features 22 full-time
+                riders.</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; <span id="copyrightyear"></span> Makenzie Beane Productions
     </footer>
 </body>
+
 </html>
+
+<script src="js/scripts.js"></script>
